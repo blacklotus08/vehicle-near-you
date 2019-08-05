@@ -1,0 +1,38 @@
+<div class="vehicle-card-item" #vehicleCardWrapper>
+    <div class="thumb">
+        <!-- <a [routerLink]="['', 'cars-online', urlLink()]"> -->
+        <a>
+            <!-- <div class="img"  [ngStyle]="{'background-image':'url(' + (Item.MainThumbnailUrl | lowercase) + '), url(/wp-content/themes/loancenter/assets/images/vehicle/lc-v-no-image.png)'}" width="100%"></div> -->
+            <!-- <app-lazy-loaded-image [ImageSource]="Item.MainThumbnailUrl | lowercase" FallBackImageSource="/wp-content/themes/loancenter/assets/images/vehicle/lc-v-no-image.png"></app-lazy-loaded-image> -->
+        </a>
+    </div>
+    <div class="info">
+        <div class="col-xs-6 no-pad">
+            <div>
+                <!-- <a [routerLink]="['', 'cars-online', urlLink()]" > -->
+                <a>    
+                    <span class="make">{{Item.BasicInfo.Make}}</span>
+                    <span class="model">{{Item.BasicInfo.Model}}</span>
+                </a>
+            </div>
+            <div>
+                <!-- <a [routerLink]="['', 'cars-online', urlLink()]"> -->
+                <a>    
+                    <span class="year">{{Item.BasicInfo.Year}}</span>
+                    <span class="mileage">${{Item.BasicInfo.VehiclePrice | number: '1.2-2'}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-6 no-pad">
+            <!-- <a [routerLink]="['', 'cars-online', urlLink()]"> -->
+            <a>
+                <span class="payment-label">Estimated Monthly Payment</span>
+                <span class="price">${{Item.PaymentInfo.MonthlyPayment | number: '1.2-2'}}</span>
+            </a>
+        </div>
+        <div class="col-xs-12 no-pad">
+            <!-- <app-disclaimer-popup [vehicle]="Item.PaymentInfo"></app-disclaimer-popup> -->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

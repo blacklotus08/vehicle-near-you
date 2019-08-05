@@ -1,0 +1,12 @@
+::ng-deep {
+    @media screen and (min-width: 768px) and (max-width: 825px) {
+        .lazy-loaded-img {
+            min-height: 275px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .lazy-loaded-img {
+            min-height: unset;
+        }
+    }
+}
