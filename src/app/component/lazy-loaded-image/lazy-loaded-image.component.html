@@ -1,0 +1,5 @@
+<div class="img lazy-loaded-img loading" width="100%" #lazyImageWrapper>
+    <img [src]="ImageSource" (load)="onloadImage($event)" (error)="loadFallbackImage($event)" #lazyImage/>
+    <div class="loader-overlay lds-facebook"><div></div><div></div><div></div></div>
+</div>
+    
