@@ -3,7 +3,7 @@
         <!-- <a [routerLink]="['', 'cars-online', urlLink()]"> -->
         <a>
             <!-- <div class="img"  [ngStyle]="{'background-image':'url(' + (Item.MainThumbnailUrl | lowercase) + '), url(/wp-content/themes/loancenter/assets/images/vehicle/lc-v-no-image.png)'}" width="100%"></div> -->
-            <!-- <app-lazy-loaded-image [ImageSource]="Item.MainThumbnailUrl | lowercase" FallBackImageSource="/wp-content/themes/loancenter/assets/images/vehicle/lc-v-no-image.png"></app-lazy-loaded-image> -->
+            <app-lazy-loaded-image [ImageSource]="Item.MainThumbnailUrl | lowercase" FallBackImageSource="/wp-content/themes/loancenter/assets/images/vehicle/lc-v-no-image.png"></app-lazy-loaded-image>
         </a>
     </div>
     <div class="info">
@@ -11,15 +11,19 @@
             <div>
                 <!-- <a [routerLink]="['', 'cars-online', urlLink()]" > -->
                 <a>    
-                    <span class="make">{{Item.BasicInfo.Make}}</span>
-                    <span class="model">{{Item.BasicInfo.Model}}</span>
+                    <!-- <span class="make">{{Item.BasicInfo.Make}} TOYOTA</span>
+                    <span class="model">{{Item.BasicInfo.Model}} COROLLA</span> -->
+                    <span class="make">TOYOTA</span>
+                    <span class="model">COROLLA</span>
                 </a>
             </div>
             <div>
                 <!-- <a [routerLink]="['', 'cars-online', urlLink()]"> -->
                 <a>    
-                    <span class="year">{{Item.BasicInfo.Year}}</span>
-                    <span class="mileage">${{Item.BasicInfo.VehiclePrice | number: '1.2-2'}}</span>
+                    <!-- <span class="year">{{Item.BasicInfo.Year}}2020</span>
+                    <span class="mileage">${{Item.BasicInfo.VehiclePrice | number: '1.2-2'}}  $23,333.00</span> -->
+                    <span class="year">2020</span>
+                    <span class="mileage">$23,333.00</span>
                 </a>
             </div>
         </div>
@@ -27,7 +31,8 @@
             <!-- <a [routerLink]="['', 'cars-online', urlLink()]"> -->
             <a>
                 <span class="payment-label">Estimated Monthly Payment</span>
-                <span class="price">${{Item.PaymentInfo.MonthlyPayment | number: '1.2-2'}}</span>
+                <!-- <span class="price">${{Item.PaymentInfo.MonthlyPayment | number: '1.2-2'}} $387.00</span> -->
+                <span class="price">$387.00</span>
             </a>
         </div>
         <div class="col-xs-12 no-pad">

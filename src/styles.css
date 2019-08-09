@@ -1,0 +1,18 @@
+.btn.btn-primary, fieldset[disabled] .btn.btn-primary {
+    font-weight: 700;
+    border-color: #f29931;
+    background-image: none;
+    background-color: #f29931;
+    background-image: -o-linear-gradient(top,#f29931,#e88c20);
+}
+a.btn, button.btn, input.btn {
+    font-weight: 700;
+}
+.btn {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+
+
+
+
